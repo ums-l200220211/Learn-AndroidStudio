@@ -1,9 +1,15 @@
 package com.learn.kotlinbasics
 
+data class coffeeDetails(
+    val sugarCount: Int,
+    val name: String,
+    val size:String,
+    val creamAmount:Int
+)
 // Call Function
 fun main(){
 
-    add(1,4)
+
     // Call Function
     println("Who is coffee for ?")
     val name = readln()
@@ -12,28 +18,13 @@ fun main(){
 
     makeCoffee(sugarCount,name)
 
-//    println("Do you want make a coffee again ? Please select Yes or No")
-//    val makeDecision = readln().trim().lowercase()
-//    makeAnotherCoffee(makeDecision)
-
 }
-
-
-fun add(num1: Int, num2: Int): Int {
-    return num1 + num2
-}
-
-
 
 
 // Define Function
-//fun makeAnotherCoffee(makeDecision: String) {
-//    if (makeDecision == "yes"){
-//        return makeCoffee()
-//    }
-//}
 
-
+//
+//
 fun makeCoffee(sugarCount: Int, name: String){
     if(sugarCount > 1){
         println("Coffee with $sugarCount spoons of sugar for $name")
@@ -49,7 +40,6 @@ fun makeCoffee(sugarCount: Int, name: String){
     }
 
 }
-
 
 
 
