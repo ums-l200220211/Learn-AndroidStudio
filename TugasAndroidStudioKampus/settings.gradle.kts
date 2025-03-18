@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TugasPemrogramanMobile"
+rootProject.name = "Tugas"
 include(":app")
